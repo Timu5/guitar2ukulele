@@ -35,6 +35,7 @@
             // 
             // guitarTextBox
             // 
+            this.guitarTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.guitarTextBox.Location = new System.Drawing.Point(12, 12);
             this.guitarTextBox.Multiline = true;
             this.guitarTextBox.Name = "guitarTextBox";
@@ -53,6 +54,7 @@
             // 
             // ukuleleTextBox
             // 
+            this.ukuleleTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ukuleleTextBox.Location = new System.Drawing.Point(12, 224);
             this.ukuleleTextBox.Multiline = true;
             this.ukuleleTextBox.Name = "ukuleleTextBox";
