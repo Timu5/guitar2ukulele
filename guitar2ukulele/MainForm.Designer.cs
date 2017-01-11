@@ -31,6 +31,8 @@
             this.guitarTextBox = new System.Windows.Forms.TextBox();
             this.convertButton = new System.Windows.Forms.Button();
             this.ukuleleTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.transTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // guitarTextBox
@@ -61,11 +63,31 @@
             this.ukuleleTextBox.Size = new System.Drawing.Size(703, 177);
             this.ukuleleTextBox.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(533, 200);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Transpose:";
+            // 
+            // transTextBox
+            // 
+            this.transTextBox.Location = new System.Drawing.Point(599, 195);
+            this.transTextBox.Name = "transTextBox";
+            this.transTextBox.Size = new System.Drawing.Size(34, 20);
+            this.transTextBox.TabIndex = 5;
+            this.transTextBox.Text = "0";
+            this.transTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 413);
+            this.Controls.Add(this.transTextBox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ukuleleTextBox);
             this.Controls.Add(this.convertButton);
             this.Controls.Add(this.guitarTextBox);
@@ -81,6 +103,8 @@
         private System.Windows.Forms.TextBox guitarTextBox;
         private System.Windows.Forms.Button convertButton;
         private System.Windows.Forms.TextBox ukuleleTextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox transTextBox;
     }
 }
 

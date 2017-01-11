@@ -39,6 +39,9 @@ namespace guitar2ukulele
                 return;
             }
 
+            int transpose = 0;
+            int.TryParse(transTextBox.Text, out transpose);
+
             List<int>[] notes = new List<int>[6];
 
             for (int i = 0; i < 6; i++)
@@ -49,12 +52,12 @@ namespace guitar2ukulele
                     int note = -1;
                     if (char.IsNumber(input[i][j]))
                     {
-                        note = Convert.ToInt32(input[i][j].ToString());
+                        note = int.Parse(input[i][j].ToString());
                         if (j < input[i].Length - 1 && char.IsNumber(input[i][j + 1]))
                         {
-                            note = note * 10 + Convert.ToInt32(input[i][++j].ToString());
+                            note = note * 10 + int.Parse(input[i][++j].ToString());
                         }
-                        note += guitarStrings[i];
+                        note += guitarStrings[i] + transpose;
                     }
                     notes[i].Add(note);
                 }
